@@ -1,0 +1,71 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_request_card_view"
+    style="@style/Theme.IceCreamShop.CardViewBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/image_ice_cream"
+            android:layout_width="@dimen/ice_cream_item_image"
+            android:layout_height="@dimen/ice_cream_item_image"
+            android:layout_margin="@dimen/margin_4"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ice_cream_name"
+            style="@style/Theme.IceCreamShop.CardViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/some_data"
+            android:layout_marginTop="@dimen/margin_8"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_ice_cream" />
+
+        <TextView
+            android:id="@+id/ice_cream_weight"
+            style="@style/Theme.IceCreamShop.CardViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/some_data"
+            android:textColor="@color/dark_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ice_cream_name" />
+
+        <TextView
+            android:id="@+id/ice_cream_price"
+            style="@style/Theme.IceCreamShop.CardViewText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/some_data"
+            android:textColor="@color/dark_gray"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ice_cream_weight" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/price_btn"
+            style="@style/Theme.IceCreamShop.CardViewFullColorBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/some_data"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ice_cream_price" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>
